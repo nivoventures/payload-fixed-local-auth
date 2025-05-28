@@ -5,13 +5,13 @@ A Payload CMS authentication strategy that provides automatic login with a fixed
 ## Installation
 
 ```bash
-npm install payload-fixed-local-auth
+npm install @nivoventures/payload-fixed-local-auth
 ```
 
 ## Usage
 
 ```typescript
-import { createFixedLocalAuth } from 'payload-fixed-local-auth';
+import { createFixedLocalAuth } from '@nivoventures/payload-fixed-local-auth';
 
 // In your Payload config
 export default buildConfig({

@@ -1,5 +1,5 @@
 {
-  "name": "@paulj/payload-fixed-local-auth",
+  "name": "@nivoventures/payload-fixed-local-auth",
   "version": "0.0.1",
   "description": "A Payload CMS authentication strategy that provides automatic login with a fixed local user",
   "main": "dist/index.js",
@@ -30,8 +30,5 @@
     "payload": "^3.39.1",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
