@@ -17,7 +17,24 @@ import { createFixedLocalAuth } from 'payload-fixed-local-auth';
 export default buildConfig({
   // ... other config
   auth: {
-    disabledisableLocalStrategy: true,
+    // This will disable the built-in auth pages of payload, but tell it to keep the database columns.
+    // If you're not going to ever use password auth (eg, you have some other solution for production),
+    // then this can simply be `disableLocalStrategy: true`. You'll need to add in an email field
+    // though, like
+    // export const Users: CollectionConfig = {
+    //   ...
+    //   fields: [
+    //     {
+    //       name: 'email',
+    //       type: 'text',
+    //       required: true
+    //     }
+    //   ]
+    //   ...
+    // }
+    disableLocalStrategy: {
+      enableFields: true
+    },
     strategies: [
       createFixedLocalAuth({
         defaultUserEmail: 'test@test.com' // sets the email that the auto-authenticated user will use
