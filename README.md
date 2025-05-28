@@ -17,6 +17,7 @@ import { createFixedLocalAuth } from 'payload-fixed-local-auth';
 export default buildConfig({
   // ... other config
   auth: {
+    disabledisableLocalStrategy: true,
     strategies: [
       createFixedLocalAuth({
         defaultUserEmail: 'test@test.com' // sets the email that the auto-authenticated user will use
@@ -31,7 +32,7 @@ export default buildConfig({
 - Automatically creates a default user if it doesn't exist
 - Configurable default user email
 - TypeScript support
-- Works with Payload CMS v2.0.0 and above
+- Works with Payload CMS v3.39.1 and above
 
 ## License
 

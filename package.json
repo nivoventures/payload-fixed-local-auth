@@ -23,11 +23,11 @@
   "author": "",
   "license": "MIT",
   "peerDependencies": {
-    "payload": ">=2.0.0"
+    "payload": ">=3.39.1"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "payload": "^2.0.0",
+    "payload": "^3.39.1",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   },
