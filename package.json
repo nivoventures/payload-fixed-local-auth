@@ -30,5 +30,9 @@
     "payload": "^3.39.1",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nivoventures/payload-fixed-local-auth"
   }
 }
